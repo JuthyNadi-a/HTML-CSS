@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: antiquewhite;
+}
+header {
+   background-color: darkslategrey;
+}
+nav ul {
+    list-style-type: none;
+    font-size: 24px;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    float: left;
+}
+li {
+    margin-right: 40px;
+}
+
+/* main {
+    display: flex;
+    align-items: center;
+} */
+img {
+    width: 90%;
+    margin-left: 120px;
+}
+p {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 210px;
+    text-align: center;
+}
+/* contact section */
+
+h2 {
+    margin-top: 40px;
+    margin-left: 770px;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgb(178, 174, 174);
+}
+table {
+    /* background-color: rgb(175, 118, 118); */
+    width: 1650px;
+    height: 350px;
+    border-style: solid 2px rgb(126, 75, 75);
+    margin-left: 80px;
+    margin-top: 50px;
+}
+th,tr {
+    width: 150px;
+    height: 50px;
+    text-align: left;
+}
+th {
+    background-color: rgb(56, 31, 31);
+    color: antiquewhite;
+}
+#secondRow {
+    background-color: rgb(141, 87, 87);
+}
+tr {
+    background-color:  rgb(175, 118, 118);
+}
+#boxes {
+    background: url("https://images.pexels.com/photos/3733925/pexels-photo-3733925.jpeg?auto=compress&cs=tinysrgb&w=800") fixed no-repeat;
+    background-size: cover;
+}
+/* .box-center{
+    display: flex;
+    align-items: center;
+} */
+.box {
+    display: inline-block;
+    margin: 32px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(233, 190, 175);
+    margin-bottom: 10px;
+}
+/* .box1, .box2, .box3, .box4, .box5{
+    
+} */
+.box1 {
+    border: groove 6px rgb(29, 29, 123);
+}
+.box2 {
+    border-style: dashed;
+    border-color: rgb(94, 231, 238);
+    border-width: 3px;
+}
+.box3 {
+ border-radius: 50%;
+ border-style: ridge;
+ border-color: darkorchid;
+ border-width: 6px;
+}
+.box4 {
+    border: dotted 6px rgb(212, 84, 38);
+}
+.box5 {
+    border-radius: 30%;
+    border-style: double;
+    border-color: rgb(212, 66, 131);
+    border-width: 6px;
+}

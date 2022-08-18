@@ -1,0 +1,17 @@
+body {
+    background-color: slategray;
+}
+/* Id styling */
+#header {
+    color: azure;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Styling paragraph */
+.para_1 {
+    margin-top: 30px;
+    text-align: center;
+    color: ivory;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
