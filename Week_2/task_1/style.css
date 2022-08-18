@@ -32,6 +32,9 @@ ul {
 li {
     margin-right: 40px;
 }
+li:hover {
+    background-color: rgb(242, 210, 25);
+}
 
 /* main {
     display: flex;
