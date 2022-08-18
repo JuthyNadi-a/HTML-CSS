@@ -3,23 +3,40 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+header {
+    text-align: right;
+    background: url("https://media.istockphoto.com/photos/fi/vihre%C3%A4-sademets%C3%A4-saniainen-kaste-l%C3%A4hikuva-id452678795?k=20&m=452678795&s=612x612&w=0&h=ZgFURI4EhD6AA_mOLd5OOMNYR2nyNqhHehlXcuuTJ4w=") no-repeat fixed;
+    background-size: cover;
+    height: 50px;
+}
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 24px; 
+    
+}
+ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.hero-banner {
+    background: url("https://media.istockphoto.com/photos/fi/digitaaliset-hiukkaset-aalto-virtaus-sininen-v%C3%A4ri-tekniikka-abstrakti-tausta-id1209358155?k=20&m=1209358155&s=612x612&w=0&h=IQt0OV3cdG7MWUdDYdFDWkORFVvnws9DDTxpwkbS26c=") no-repeat fixed;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}
 h1 {
+    padding-top: 200px;
     text-align: center;
-    color: rebeccapurple;
+    color: rgb(222, 214, 230);
     text-shadow: 2px 2px 2px rgb(251, 249, 249);
+    font-size: 40px;
 }
 h2 {
     color: rgb(122, 60, 184);
     text-decoration: underline;
     text-shadow: 0px 2px 2px rgb(168, 163, 163);
     text-align: center;
-}
-ul{
-  font-size: 24px;    
-}
-.contents {
-    align-items: center;
-    justify-items: center;
 }
 img {
     width: 300px;
