@@ -55,17 +55,18 @@ p {
 
 h2 {
     margin-top: 40px;
-    margin-left: 770px;
+    margin-left: 640px;
     font-size: 28px;
     text-shadow: 2px 2px 2px rgb(178, 174, 174);
 }
 table {
     /* background-color: rgb(175, 118, 118); */
-    width: 1650px;
+    width: 1300px;
     height: 350px;
     border-style: solid 2px rgb(126, 75, 75);
     margin-left: 80px;
     margin-top: 50px;
+    border-collapse: collapse;
 }
 th,tr {
     width: 150px;
@@ -81,6 +82,21 @@ th {
 }
 tr {
     background-color:  rgb(175, 118, 118);
+}
+td {
+    width: 200px;
+    padding:15px;
+}
+thead {
+    font-weight: 700;
+    background: lightcyan;
+    color: rgb(11, 11, 81);
+}
+tbody {
+    color: lightcyan;
+}
+tbody td {
+    border-bottom: 1px solid gray;
 }
 #boxes {
     background: url("https://images.pexels.com/photos/3733925/pexels-photo-3733925.jpeg?auto=compress&cs=tinysrgb&w=800") fixed no-repeat;

@@ -1,0 +1,17 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table{
+    margin: 20px;
+}
+thead {
+    background-color: brown;
+    color: aliceblue;
+}
