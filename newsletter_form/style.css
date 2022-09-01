@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(32, 93, 32, 0.843);
+}
+.form {
+    background-color: whitesmoke;
+    width: 380px;
+    height: 767px;
+    text-align: center;
+    margin: 5px 5px;
+    margin-left: 520px;
+    margin-top: 30px;
+    padding: 2px 2px;
+    border-radius: 5px;
+}
+.form label {
+    color: gray;
+}
+input{
+    margin: 10px 10px;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+    color: gray;
+}
+#first {
+    padding-right: 238px;
+}
+#last {
+    padding-right: 238px;
+}
+#email {
+    padding-right: 265px;
+}
+#password {
+    padding-right: 242px;
+}
+#confirmPassword {
+    padding-right: 188px;
+}
+span {
+    color: rgb(224, 97, 51);
+}
+button{
+    background-color: rgb(224, 97, 51);
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(207, 201, 201);
+    margin-top: 15px;
+}
+
+#info {
+    margin-top: 20px;
+    padding-left: 55px; 
+    padding-right: 35px;
+    font-size: 18px;
+}
+#logIn {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
