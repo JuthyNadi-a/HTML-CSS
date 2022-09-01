@@ -72,3 +72,12 @@ hr {
     display: flex;
     float: left;
 }
+/* footer */
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    width: 95%;
+    margin-left: 35px;
+    border-radius: 5px;
+}
