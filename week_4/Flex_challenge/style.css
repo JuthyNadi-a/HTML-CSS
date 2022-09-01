@@ -31,7 +31,41 @@ ul li{
 main {
     display: flex;
 }
+section {
+    display: flex;
+}
 .post-title {
-    height: 250px;
+    height: 55px;
     background-color: slategrey;
+}
+.post-meta {
+    height: 55px;
+    background-color: rgb(43, 147, 86);
+}
+.main-content {
+    height: 55px;
+    background-color: rgb(172, 176, 174);
+}
+.main-content-img {
+    height: 55px;
+    background-color: rgb(199, 196, 7);
+}
+aside {
+    display: flex;
+}
+.side-bar {
+    height: 55px;
+    background-color: rgb(199, 109, 7);
+}
+.ads {
+    height: 55px;
+    background-color: rgb(31, 62, 14);
+}
+.other-stuff {
+    height: 55px;
+    background-color: rgb(151, 7, 199);
+}
+footer {
+    height: 32px;
+    background-color: brown;
 }
