@@ -20,11 +20,9 @@ header {
     margin: .4rem;
 };
 
-ul {
-    display: flex;
-    flex: 2;
-}
 ul li{
+    flex: 2;
+    display: flex;
     list-style-type: none;
     background-color: rgb(233, 161, 173);
 };
