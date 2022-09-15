@@ -4,7 +4,7 @@ body {
 }
 
 table, td{
-    border: 1px solid black;
+    border: 1px solid rgb(22, 21, 21);
     border-collapse: collapse;
     padding: 10px;
 }
