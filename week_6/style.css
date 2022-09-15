@@ -35,7 +35,7 @@ body {
     background-color: rgb(232, 232, 104);
     grid-column: 1 / span 3;
 }
-
+/*  grid area options */
 .areas-container {
     display: grid;
     text-align: center;

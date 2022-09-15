@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(187, 232, 232);
+    margin: 1.5rem;
+}
+.grid-container {
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    font-size: 2rem;
+    grid-template-areas: 
+    "stitle stitle nav1 nav2 nav3"
+    "ptitle ptitle ptitle ptitle sidebar"
+    "ptitle ptitle ptitle ptitle sidebar"
+    "ptitle ptitle ptitle ptitle sidebar"
+    "meta content content content ads"
+    "meta content content content ads"
+    "meta content content content ads"
+    "image image image image stuff"
+    "image image image image stuff"
+    "image image image image stuff"
+    "image image image image stuff"
+    "footer footer footer footer footer"
+    ;
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+}
+.Stitle {
+ grid-area: stitle;
+ background-color: rgb(214, 189, 47);
+}
+.nav1{
+    grid-area: nav1; 
+    background-color: rgb(211, 184, 210);
+}
+.nav2{
+    grid-area: nav2;
+    background-color: rgb(217, 188, 216);
+}
+.nav3{
+    grid-area: nav3;
+    background-color: rgb(217, 187, 216);
+}
+.Ptitle{
+    grid-area: ptitle;
+    background-color: rgb(118, 158, 195);
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(163, 116, 96);
+    grid-row: 2 / span 4;
+}
+.meta {
+    grid-area: meta;
+    background-color: rgb(132, 218, 173);
+    grid-row: 5 / span 7;
+} 
+.content {
+    grid-area: content;
+    background-color: rgb(190, 182, 173);
+}
+.ads {
+    grid-area: ads;
+    background-color: rgb(12, 67, 16);
+    grid-row: 6 / span 3;
+}
+.image {
+    grid-area: image;
+    background-color: rgb(201, 201, 71);
+    grid-column: 2 / span 3;
+}
+.stuff {
+    grid-area: stuff;
+    background-color: rgb(105, 64, 134);
+    grid-row: 9 / span 3;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(72, 46, 46);
+}
