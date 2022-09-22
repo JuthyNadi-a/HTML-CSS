@@ -13,6 +13,9 @@ body {
     font-size: 1.5rem;
     min-height: 100vh;
 }
+main {
+    min-height: 100vh;
+}
 header {
     display: flex;
     position: sticky;
@@ -62,14 +65,44 @@ a:hover {
     height: 500px;
     width: auto;
 } */
-/* h1 {
-    text-align: left;
-    color: rgb(31, 54, 130);
-    text-shadow: 2px 2px 2px rgb(251, 249, 249);
-    font-size: 2rem;
-} */
+.bannerContent {
+    display: flex;
+}
+.banner {
+    margin: 100px 180px;
+    width: 50%;
+}
+.banner h1{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.banner p {
+    font-size: 2.5rem;
+}
+.bannerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: aqua;
+    background: url('image.jpeg') no-repeat center center/cover;
+    margin: 70px 100px;
+}
+h2 {
+    margin-top: 1rem;
+}
 .details {
-    min-height: 40vh;
+    min-height: 30vh;
+}
+#projects {
+    background-color: rgb(187, 208, 201);
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 h2 {
     color: rgb(16, 73, 163);
@@ -119,7 +152,7 @@ footer {
     display: flex;
 }
 .header {
-    width: 50%;
+    width: 38%;
     display: flex;
     align-items: center;
 }
@@ -127,24 +160,49 @@ footer {
     width: 50%;
     text-align: left;
     padding: 20px;
+    margin-left: 5rem;
 }
 footer h3 {
     margin: 20px;
     padding: 20px;
     font-size: 3rem;
 }
+.line {
+    margin-top: 1rem;
+    height: 60vh;
+    width: .2%;
+    background-color: rgb(63, 59, 59);
+    box-shadow: 2px 2px 2px gray;
+}
 label {
     font-size: 2rem;
 }
-input, #textArea {
+input{
     font-size: 2rem;
     border-radius: 6px;
     border: none;
     font-family: inherit;
-    margin: 1rem;
+    margin: 1rem 2rem;
     padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 2px gray;
 }
 
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18rem;
+    padding: 1.5rem 2.5rem;
+}
+#textArea {
+    font-size: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-family: inherit;
+    margin: 0 2rem;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 2px gray;
+}
 button{
     padding: 20px;
     margin: 20px;

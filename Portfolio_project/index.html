@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Nadia's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,27 +28,49 @@
         <!-- <section class="hero-banner">
             <h1></h1> <br>
         </section> -->
+    <section class="bannerContent">
+        <div class="details banner">
+            <h1>Hi! I am Nadia Jahan Juthy.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ullam natus temporibus quis corrupti quas eveniet, ad eum alias. Nesciunt.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio perferendis, molestiae dolor sit quia ducimus!
+            </p>
+        </div>
+        <div class="bannerImg">
+        </div>
+        
+    </section>
     <!-- Projects section -->
-    <div id="projects">
+    <div class="detalis" id="projects">
         <h2>Projects</h2>
-        <p class="details">
-
-        </p>
+        <div>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, in!</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ullam natus temporibus quis corrupti quas eveniet, ad eum alias. Nesciunt.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio perferendis, molestiae dolor sit quia ducimus!
+            </p>
+        </div>
+        <div class="images">
+            <div class="bannerImg">
+            </div>
+            <div class="bannerImg">
+            </div>
+            <div class="bannerImg">
+            </div>
+        </div>
     </div>
     <!-- About me section -->
-    <div id="about_me">
+    <div class="detalis" id="about_me">
         <h2>About me</h2>
-        <p class="details">
-
-        </p>
+       
     </div>
     <!-- Skills section -->
-    <div id="skills">
+    <div class="detalis" id="skills">
         <h2>Skills</h2>
-       
-        <p class="detalis">
-
-        </p>
     </div>
 </div>
 </main>
@@ -56,16 +79,19 @@
         <div class="header">
             <h3>Contact me</h3>
         </div>
+        <div class="line">
+        </div>
         <div class="content"> 
-            <div>
+            <div class="inputDiv">
             <label for="name"> Your name</label>
             <input type="text" id="userName">
             </div>
-            <div>
+            <div class="inputDiv">
                 <label for="email">Your email</label>
                 <input type="email" id="userEmail">
             </div>
-            <div>
+            <div class="message">
+                <label for="textArea" id="message">Message</label>
                 <textarea id="textArea" cols="50" rows="10" placeholder="Write your message here"></textarea>
             </div>
             <button type="submit">Send message</button>
