@@ -80,7 +80,7 @@ a:hover {
     width: 50%;
     height: 400px;
     width: 400px;
-    background: url('image.jpeg') no-repeat center center/cover;
+    background: url('assets/image.jpeg') no-repeat center center/cover;
     margin: 70px 100px;
     position: relative;
 }
