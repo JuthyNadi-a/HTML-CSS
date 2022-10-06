@@ -67,8 +67,10 @@ a:hover {
     width: 50%;
 }
 .banner h1{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     margin-bottom: 1rem;
+    color: rgb(29, 33, 120);
+    text-shadow: 1px 2px gray;
 }
 .banner p {
     font-size: 2.5rem;
@@ -92,20 +94,31 @@ a:hover {
     right: 450px;
     border: 2px solid black;
 }
+.details {
+    min-height: 50vh;
+}
 h2 {
     margin-top: 1rem;
-}
-.details {
-    min-height: 30vh;
-}
-h2 {
+    margin-left: 1rem;
     color: rgb(16, 73, 163);
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-shadow: 0px 2px 2px rgb(168, 163, 163);
-    text-align: center;
 }
-#projects, #about_me, #skills {
+#projects,#about, #skills {
     text-align: center;
+    margin-bottom: 5rem;
+}
+#projects p, #skills p{
+    text-align: center;
+    color: rgb(16, 73, 163);
+    font-size: 3.5rem;
+}
+
+hr {
+    width: 90%;
+    margin-left: 140px;
+    height: 40px;
+    border-width: 3px;
 }
 .projectImg {
     width: 70%;
@@ -123,6 +136,47 @@ h2 {
     text-shadow: 0px 2px 2px black;
     color: rebeccapurple;
 }
+/* Skills section */
+#skills {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 32rem auto;
+}
+.skillContent {
+    margin-top: 25rem;
+} 
+.skillImages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+}
+.skillImages img {
+    width: 500px;
+    height: 400px;
+}
+.skillImages img:hover {
+    transform: scale(1.2);
+    transition: 1s ease-out;
+}
+/* About me */
+.about-content {
+    display: flex;
+}
+.about-content img {
+    flex: 3;
+    height: 500px;
+    width: 150px;
+    margin-left: 4rem;
+}
+.about-content p {
+    flex: 3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
 
 /* Contact section */
 
@@ -135,7 +189,7 @@ h2 {
 .contents {
     display: flex;
 }
-.header {
+.contact-header {
     width: 38%;
     display: flex;
     align-items: center;
@@ -145,6 +199,9 @@ h2 {
     text-align: left;
     padding: 20px;
     margin-left: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 .contact h3 {
     margin: 20px;
@@ -160,6 +217,10 @@ h2 {
 }
 label {
     font-size: 2rem;
+    display: block;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 input{
     font-size: 2rem;
@@ -169,12 +230,11 @@ input{
     margin: 1rem 2rem;
     padding: 1.5rem 2.5rem;
     box-shadow: 0 2px 2px gray;
+    background-color: rgb(219, 211, 211);
 }
 .message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 18rem;
+    display: block;
+    /* margin-right: 18rem; */
     padding: 1.5rem 2.5rem;
 }
 #textArea {
@@ -185,6 +245,7 @@ input{
     margin: 0 2rem;
     padding: 1.5rem 2.5rem;
     box-shadow: 0 2px 2px gray;
+    background-color: rgb(219, 211, 211);
 }
 #submit{
     padding: 20px;
@@ -198,7 +259,7 @@ input{
 }
 /* footer */
 footer{
-    display: grid;
+    display: flex;
     height: 10vh;
     background-color: rgb(8, 31, 78);
     color: rgb(174, 206, 217);
@@ -207,6 +268,7 @@ footer h5 {
     font-size: 1.5rem;
     margin-top: 3.5rem;
     margin-left: 2rem;
+    flex: 2;
 }
 
 .btn {
@@ -232,4 +294,16 @@ footer h5 {
 .btn:hover {
     background-color: aliceblue;
     color: rgb(12, 28, 88);
+}
+.icons {
+flex: 2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.icons img {
+    margin-left: 2.2rem;
+    height: 65px;
+    border-radius: 8px;
+    background-color: rgb(8, 31, 78);
 }
