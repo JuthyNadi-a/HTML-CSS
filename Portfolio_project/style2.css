@@ -22,7 +22,7 @@ header {
     height: 8vh;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(80, 89, 143);
+    background-color: rgb(10, 29, 69);
     color: aliceblue;
     top: 0;
 }
@@ -42,18 +42,18 @@ a {
 }
 a:hover {
     background-color: rgb(217, 226, 233);
-    color: rgb(80, 89, 143);
+    color: rgb(8, 31, 78);
 }
 .active {
     background-color: #fff;
-    color: rgb(48, 54, 88);
+    color: rgb(8, 31, 78);
     box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
 }
 .active a{
-    color: rgb(48, 54, 88);
+    color: rgb(8, 31, 78);
 }
 .active a:hover{
-    background-color: rgb(69, 77, 126);
+    background-color: rgb(8, 31, 78);
     color: aliceblue;
 }
 .logo {
@@ -123,20 +123,10 @@ h2 {
     text-shadow: 0px 2px 2px black;
     color: rebeccapurple;
 }
-#contact {
-    text-align: center;
-    font-size: 24px;
-}
-.contact {
-    align-items: center;
-    font-size: 25px;
-    margin: 60px 0px 0px 220px ;
-    display: flex;
-    float: left;
-}
-/* footer */
 
-footer {
+/* Contact section */
+
+.contact {
     text-align: left;
     border-radius: 5px;
     min-height: 30vh;
@@ -156,7 +146,7 @@ footer {
     padding: 20px;
     margin-left: 5rem;
 }
-footer h3 {
+.contact h3 {
     margin: 20px;
     padding: 20px;
     font-size: 3rem;
@@ -206,8 +196,40 @@ input{
     color: aliceblue;
     box-shadow: 1px 1px 1px gray;
 }
+/* footer */
+footer{
+    display: grid;
+    height: 10vh;
+    background-color: rgb(8, 31, 78);
+    color: rgb(174, 206, 217);
+}
 footer h5 {
-    text-align: center;
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+}
+
+.btn {
+    background-color: rgb(12, 28, 88);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    color: white;
+  }
+.icon {
+    font-size: 2.4rem;
+}
+#topBtn {
+    border-radius: 50%;
+    padding: 25px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+.btn:hover {
+    background-color: aliceblue;
+    color: rgb(12, 28, 88);
 }
