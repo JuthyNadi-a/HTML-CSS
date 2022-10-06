@@ -59,12 +59,6 @@ a:hover {
 .logo {
     flex: 3;
 }
-/* .hero-banner {
-    background: url("https://media.istockphoto.com/photos/fi/digitaaliset-hiukkaset-aalto-virtaus-sininen-v%C3%A4ri-tekniikka-abstrakti-tausta-id1209358155?k=20&m=1209358155&s=612x612&w=0&h=IQt0OV3cdG7MWUdDYdFDWkORFVvnws9DDTxpwkbS26c=") no-repeat fixed;
-    background-size: cover;
-    height: 500px;
-    width: auto;
-} */
 .bannerContent {
     display: flex;
 }
@@ -86,10 +80,17 @@ a:hover {
     width: 50%;
     height: 400px;
     width: 400px;
-    border-radius: 50%;
-    background-color: aqua;
     background: url('image.jpeg') no-repeat center center/cover;
     margin: 70px 100px;
+    position: relative;
+}
+.box {
+    height: 400px;
+    width: 400px;
+    margin-top: 120px;
+    position: relative;
+    right: 450px;
+    border: 2px solid black;
 }
 h2 {
     margin-top: 1rem;
@@ -97,13 +98,7 @@ h2 {
 .details {
     min-height: 30vh;
 }
-#projects {
-    background-color: rgb(187, 208, 201);
-}
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+
 h2 {
     color: rgb(16, 73, 163);
     font-size: 2rem;
@@ -120,7 +115,16 @@ img {
 #projects, #about_me, #skills {
     text-align: center;
 }
-
+.projectImg {
+    width: 30%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.projectImg img{
+    height: 600px;
+    width: 900px;
+}
 #ending {
     font-size: 40px;
     text-align: center;
@@ -142,7 +146,6 @@ img {
 /* footer */
 
 footer {
-    background-color: rgba(161, 190, 213, 0.718);
     text-align: left;
     border-radius: 5px;
     min-height: 30vh;
