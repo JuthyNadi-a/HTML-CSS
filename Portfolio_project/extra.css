@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to bottom,#f8edf8, #aeced9) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    min-height: 100vh;
+}
+main {
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    position: sticky;
+    height: 8vh;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(80, 89, 143);
+    color: aliceblue;
+    top: 0;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+    font-size: 1.8rem; 
+}
+
+a {
+    /* font-size: 1.8rem; */
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+a:hover {
+    background-color: rgb(217, 226, 233);
+    color: rgb(80, 89, 143);
+}
+.active {
+    background-color: #fff;
+    color: rgb(48, 54, 88);
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+}
+.active a{
+    color: rgb(48, 54, 88);
+}
+.active a:hover{
+    background-color: rgb(69, 77, 126);
+    color: aliceblue;
+}
+.logo {
+    flex: 3;
+}
+.bannerContent {
+    display: flex;
+}
+.banner {
+    margin: 100px 180px;
+    width: 50%;
+}
+.banner h1{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.banner p {
+    font-size: 2.5rem;
+}
+.bannerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    width: 400px;
+    background: url('image.jpeg') no-repeat center center/cover;
+    margin: 70px 100px;
+    position: relative;
+}
+.box {
+    height: 400px;
+    width: 400px;
+    margin-top: 120px;
+    position: relative;
+    right: 450px;
+    border: 2px solid black;
+}
+h2 {
+    margin-top: 1rem;
+}
+.details {
+    min-height: 30vh;
+}
+
+h2 {
+    color: rgb(16, 73, 163);
+    font-size: 2rem;
+    text-shadow: 0px 2px 2px rgb(168, 163, 163);
+    text-align: center;
+}
+img {
+    width: 300px;
+    height: 200px;
+    align-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#projects, #about_me, #skills {
+    text-align: center;
+}
+.projectImg {
+    width: 30%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.projectImg img{
+    height: 600px;
+    width: 900px;
+}
+#ending {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+    color: rebeccapurple;
+}
+#contact {
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact {
+    align-items: center;
+    font-size: 25px;
+    margin: 60px 0px 0px 220px ;
+    display: flex;
+    float: left;
+}
+/* footer */
+
+footer {
+    text-align: left;
+    border-radius: 5px;
+    min-height: 30vh;
+    color: rgb(16, 73, 163);
+}
+.contents {
+    display: flex;
+}
+.header {
+    width: 38%;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    margin-left: 5rem;
+}
+footer h3 {
+    margin: 20px;
+    padding: 20px;
+    font-size: 3rem;
+}
+.line {
+    margin-top: 1rem;
+    height: 60vh;
+    width: .2%;
+    background-color: rgb(63, 59, 59);
+    box-shadow: 2px 2px 2px gray;
+}
+label {
+    font-size: 2rem;
+}
+input{
+    font-size: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-family: inherit;
+    margin: 1rem 2rem;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 2px gray;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18rem;
+    padding: 1.5rem 2.5rem;
+}
+#textArea {
+    font-size: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-family: inherit;
+    margin: 0 2rem;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 2px gray;
+}
+button{
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background: rgb(17, 62, 120);
+    color: aliceblue;
+    box-shadow: 1px 1px 1px gray;
+}
+footer h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+/* 
+.skillImages{
+    width: 80vw; 
+    height: 80vh;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-areas: 
+    "html js js js css css"
+    "html js js js css css"
+    "figma linux linux aws aws bootstrap"
+    "figma linux linux aws aws bootstrap"
+    "salesforce ux react react react node"
+    "salesforce ux react react react node"
+    "salesforce ux react react react node";
+  }
+.imgHtml {
+    grid-area: html;
+    background-color: blueviolet;
+}
+.imgJs {
+    background-color: mediumorchid;
+    grid-area: js;
+}
+.imgCss{
+    grid-area: css;
+    background-color: brown;
+}
+.imgFigma {
+    grid-area: figma;
+    grid-row: 2 / span 5;
+}
+.imgLinux {
+    grid-area: linux;
+    background-color: darkgoldenrod;
+    grid-column: 1.5 / span 2.5;
+}
+.imgAws {
+    grid-area: aws;
+    background-color: rgb(184, 11, 167);
+}
+.imgBootstrap {
+    grid-area: bootstrap;
+    background-color: rgb(158, 184, 11);
+}
+.imgUx {
+    grid-area: ux;
+    background-color: rgb(11, 184, 175);
+}
+.imgReact {
+    grid-area: react;
+    background-color: rgb(184, 11, 28);
+}
+.imgSalesforce {
+    grid-area: salesforce;
+    grid-row: 3/ span 6;
+}
+.imgNode {
+    grid-area: node;
+    background-color: rgb(11, 184, 60);
+} */

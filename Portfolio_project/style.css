@@ -22,7 +22,7 @@ header {
     height: 8vh;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(80, 89, 143);
+    background-color: rgb(10, 29, 69);
     color: aliceblue;
     top: 0;
 }
@@ -42,18 +42,18 @@ a {
 }
 a:hover {
     background-color: rgb(217, 226, 233);
-    color: rgb(80, 89, 143);
+    color: rgb(8, 31, 78);
 }
 .active {
     background-color: #fff;
-    color: rgb(48, 54, 88);
+    color: rgb(8, 31, 78);
     box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
 }
 .active a{
-    color: rgb(48, 54, 88);
+    color: rgb(8, 31, 78);
 }
 .active a:hover{
-    background-color: rgb(69, 77, 126);
+    background-color: rgb(8, 31, 78);
     color: aliceblue;
 }
 .logo {
@@ -67,22 +67,23 @@ a:hover {
     width: 50%;
 }
 .banner h1{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     margin-bottom: 1rem;
+    color: rgb(29, 33, 120);
+    text-shadow: 1px 2px gray;
 }
 .banner p {
     font-size: 2.5rem;
 }
-.bannerImg {
+.bannerImg img{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 400px;
-    width: 400px;
-    background: url('image.jpeg') no-repeat center center/cover;
     margin: 70px 100px;
     position: relative;
+    height: 400px;
+    width: 400px;
 }
 .box {
     height: 400px;
@@ -92,38 +93,45 @@ a:hover {
     right: 450px;
     border: 2px solid black;
 }
+.details {
+    min-height: 40vh;
+}
 h2 {
     margin-top: 1rem;
+    margin-left: 1rem;
+    color: rgb(16, 73, 163);
+    font-size: 3.5rem;
+    text-shadow: 0px 2px 2px rgb(168, 163, 163);
 }
-.details {
-    min-height: 30vh;
+#projects,#about, #skills {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#projects p, #skills p{
+    text-align: center;
+    color: rgb(16, 73, 163);
+    font-size: 3.5rem;
 }
 
-h2 {
-    color: rgb(16, 73, 163);
-    font-size: 2rem;
-    text-shadow: 0px 2px 2px rgb(168, 163, 163);
-    text-align: center;
-}
-img {
-    width: 300px;
-    height: 200px;
-    align-content: center;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-#projects, #about_me, #skills {
-    text-align: center;
+hr {
+    width: 90%;
+    margin-left: 140px;
+    height: 40px;
+    border-width: 3px;
 }
 .projectImg {
-    width: 30%;
-    display: grid;
-    justify-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-left: 420px;
 }
 .projectImg img{
-    height: 600px;
-    width: 900px;
+    height: 800px;
+    margin: 25px;
+}
+span {
+    height: 50px;
 }
 #ending {
     font-size: 40px;
@@ -131,21 +139,85 @@ img {
     text-shadow: 0px 2px 2px black;
     color: rebeccapurple;
 }
-#contact {
-    text-align: center;
-    font-size: 24px;
+/* Skills section */
+
+#skills {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+} 
+.skillImages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 3rem;
+    grid-gap: 22px;
 }
+.skillImages img {
+    width: 450px;
+    height: 420px;
+} 
+.skillImages img:hover {
+    transform: scale(1.2);
+    transition: 1s ease-out;
+}
+
+/* About me */
+
+.about-content img {
+    height: 450px;
+    width: 750px;
+    margin-right: 2rem;
+    margin-left: 890px;
+}
+.about-content img:hover, .about-content p:hover {
+    box-shadow: -8px 8px rgb(152, 151, 151);
+}
+.about-content p {
+    width: 850px;
+    height: 450px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 39rem;
+    margin-right: 4rem;
+    padding: 2rem;
+    background-color: white;
+}
+h3 {
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 500px;
+    border-radius: 5px;
+    margin: 3rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    height: 600px;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+/* Contact section */
 
 .contact {
-    align-items: center;
-    font-size: 25px;
-    margin: 60px 0px 0px 220px ;
-    display: flex;
-    float: left;
-}
-/* footer */
-
-footer {
     text-align: left;
     border-radius: 5px;
     min-height: 30vh;
@@ -154,7 +226,7 @@ footer {
 .contents {
     display: flex;
 }
-.header {
+.contact-header {
     width: 38%;
     display: flex;
     align-items: center;
@@ -164,11 +236,17 @@ footer {
     text-align: left;
     padding: 20px;
     margin-left: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
-footer h3 {
-    margin: 20px;
-    padding: 20px;
+.contact h3 {
+     margin: 10px 20px;
+    padding: 20px; 
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .line {
     margin-top: 1rem;
@@ -179,107 +257,132 @@ footer h3 {
 }
 label {
     font-size: 2rem;
+    display: block;
+    display: grid;
+    /* justify-items: center;
+    align-items: center; */
 }
 input{
     font-size: 2rem;
     border-radius: 6px;
     border: none;
     font-family: inherit;
-    margin: 1rem 2rem;
-    padding: 1.5rem 2.5rem;
+    margin: 1rem 0;
+    padding: 1.5rem 2.5rem; 
     box-shadow: 0 2px 2px gray;
+    background-color: rgb(243, 239, 239);
 }
-
 .message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 18rem;
-    padding: 1.5rem 2.5rem;
+    display: block;
 }
 #textArea {
     font-size: 2rem;
     border-radius: 6px;
     border: none;
     font-family: inherit;
-    margin: 0 2rem;
+    margin: 1rem 0;
     padding: 1.5rem 2.5rem;
     box-shadow: 0 2px 2px gray;
+    background-color: rgb(236, 234, 234);
 }
-button{
+#submit{
     padding: 20px;
-    margin: 20px;
-    font-size: 1.5rem;
+    margin: 20px 0;
+    font-size: 2rem;
     border-radius: 8px;
     border: none;
-    background: rgb(17, 62, 120);
-    color: aliceblue;
+    background-color: rgb(152, 171, 187);
+    color: rgb(12, 28, 88);
     box-shadow: 1px 1px 1px gray;
 }
+#submit:hover {
+    background: rgb(17, 62, 120);
+    color: aliceblue;
+}
+/* footer */
+footer{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(8, 31, 78);
+    color: rgb(174, 206, 217);
+}
 footer h5 {
-    text-align: center;
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+    flex: 2;
 }
 
-/* 
-.skillImages{
-    width: 80vw; 
-    height: 80vh;
-    padding: 20px;
-    display: grid;
-    grid-gap: 10px 10px;
-    grid-template-areas: 
-    "html js js js css css"
-    "html js js js css css"
-    "figma linux linux aws aws bootstrap"
-    "figma linux linux aws aws bootstrap"
-    "salesforce ux react react react node"
-    "salesforce ux react react react node"
-    "salesforce ux react react react node";
+.btn {
+    background-color: rgb(12, 28, 88);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    color: white;
   }
-.imgHtml {
-    grid-area: html;
-    background-color: blueviolet;
+.icon {
+    font-size: 2.4rem;
 }
-.imgJs {
-    background-color: mediumorchid;
-    grid-area: js;
+#topBtn {
+    border-radius: 50%;
+    padding: 25px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
 }
-.imgCss{
-    grid-area: css;
-    background-color: brown;
+.btn:hover {
+    background-color: aliceblue;
+    color: rgb(12, 28, 88);
 }
-.imgFigma {
-    grid-area: figma;
-    grid-row: 2 / span 5;
+.icons {
+flex: 2;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.imgLinux {
-    grid-area: linux;
-    background-color: darkgoldenrod;
-    grid-column: 1.5 / span 2.5;
+.icons img {
+    margin-left: 2.2rem;
+    height: 65px;
+    border-radius: 8px;
+    background-color: rgb(8, 31, 78);
 }
-.imgAws {
-    grid-area: aws;
-    background-color: rgb(184, 11, 167);
-}
-.imgBootstrap {
-    grid-area: bootstrap;
-    background-color: rgb(158, 184, 11);
-}
-.imgUx {
-    grid-area: ux;
-    background-color: rgb(11, 184, 175);
-}
-.imgReact {
-    grid-area: react;
-    background-color: rgb(184, 11, 28);
-}
-.imgSalesforce {
-    grid-area: salesforce;
-    grid-row: 3/ span 6;
-}
-.imgNode {
-    grid-area: node;
-    background-color: rgb(11, 184, 60);
-} */
+#mob_button {
+    display: none;
+  }
+/* Mobile menu */
+@media (max-width: 800px) {
+    nav ul {
+      display: none;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    #mob_button {
+      background-color: transparent;
+      display: block;
+      border: none;
+      color: white;
+      padding: 1rem;
+    }
+    nav.responsive ul {
+      background-color: white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 85px;
+    }
+  
+    nav.responsive ul li {
+      display: block;
+    }
+    nav.responsive ul li a {
+      color: #032330;
+      display: block;
+      width: 100%;
+    }
+  }
