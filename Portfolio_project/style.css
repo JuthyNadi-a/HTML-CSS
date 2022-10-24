@@ -221,3 +221,65 @@ footer h5 {
     font-size: 1.5rem;
     margin-top: 30px;
 }
+
+/* 
+.skillImages{
+    width: 80vw; 
+    height: 80vh;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-areas: 
+    "html js js js css css"
+    "html js js js css css"
+    "figma linux linux aws aws bootstrap"
+    "figma linux linux aws aws bootstrap"
+    "salesforce ux react react react node"
+    "salesforce ux react react react node"
+    "salesforce ux react react react node";
+  }
+.imgHtml {
+    grid-area: html;
+    background-color: blueviolet;
+}
+.imgJs {
+    background-color: mediumorchid;
+    grid-area: js;
+}
+.imgCss{
+    grid-area: css;
+    background-color: brown;
+}
+.imgFigma {
+    grid-area: figma;
+    grid-row: 2 / span 5;
+}
+.imgLinux {
+    grid-area: linux;
+    background-color: darkgoldenrod;
+    grid-column: 1.5 / span 2.5;
+}
+.imgAws {
+    grid-area: aws;
+    background-color: rgb(184, 11, 167);
+}
+.imgBootstrap {
+    grid-area: bootstrap;
+    background-color: rgb(158, 184, 11);
+}
+.imgUx {
+    grid-area: ux;
+    background-color: rgb(11, 184, 175);
+}
+.imgReact {
+    grid-area: react;
+    background-color: rgb(184, 11, 28);
+}
+.imgSalesforce {
+    grid-area: salesforce;
+    grid-row: 3/ span 6;
+}
+.imgNode {
+    grid-area: node;
+    background-color: rgb(11, 184, 60);
+} */

@@ -140,27 +140,27 @@ span {
     color: rebeccapurple;
 }
 /* Skills section */
+
 #skills {
-    margin-top: 8rem;
     display: grid;
-    grid-template-columns: 32rem auto;
-}
-.skillContent {
-    margin-top: 25rem;
+    justify-items: center;
+    align-items: center;
 } 
 .skillImages {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-left: 3rem;
+    grid-gap: 22px;
 }
 .skillImages img {
-    width: 500px;
-    height: 400px;
-}
+    width: 450px;
+    height: 420px;
+} 
 .skillImages img:hover {
     transform: scale(1.2);
     transition: 1s ease-out;
 }
+
 /* About me */
 
 .about-content img {
@@ -184,7 +184,37 @@ span {
     padding: 2rem;
     background-color: white;
 }
-
+h3 {
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 500px;
+    border-radius: 5px;
+    margin: 3rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    height: 600px;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
 /* Contact section */
 
 .contact {
@@ -211,9 +241,12 @@ span {
     align-items: center;
 }
 .contact h3 {
-    margin: 20px;
-    padding: 20px;
+     margin: 10px 20px;
+    padding: 20px; 
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .line {
     margin-top: 1rem;
@@ -226,43 +259,45 @@ label {
     font-size: 2rem;
     display: block;
     display: grid;
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center;
+    align-items: center; */
 }
 input{
     font-size: 2rem;
     border-radius: 6px;
     border: none;
     font-family: inherit;
-    margin: 1rem 2rem;
-    padding: 1.5rem 2.5rem;
+    margin: 1rem 0;
+    padding: 1.5rem 2.5rem; 
     box-shadow: 0 2px 2px gray;
-    background-color: rgb(219, 211, 211);
+    background-color: rgb(243, 239, 239);
 }
 .message {
     display: block;
-    /* margin-right: 18rem; */
-    padding: 1.5rem 2.5rem;
 }
 #textArea {
     font-size: 2rem;
     border-radius: 6px;
     border: none;
     font-family: inherit;
-    margin: 0 2rem;
+    margin: 1rem 0;
     padding: 1.5rem 2.5rem;
     box-shadow: 0 2px 2px gray;
-    background-color: rgb(219, 211, 211);
+    background-color: rgb(236, 234, 234);
 }
 #submit{
     padding: 20px;
-    margin: 20px;
-    font-size: 1.5rem;
+    margin: 20px 0;
+    font-size: 2rem;
     border-radius: 8px;
     border: none;
+    background-color: rgb(152, 171, 187);
+    color: rgb(12, 28, 88);
+    box-shadow: 1px 1px 1px gray;
+}
+#submit:hover {
     background: rgb(17, 62, 120);
     color: aliceblue;
-    box-shadow: 1px 1px 1px gray;
 }
 /* footer */
 footer{
@@ -314,3 +349,40 @@ align-items: center;
     border-radius: 8px;
     background-color: rgb(8, 31, 78);
 }
+#mob_button {
+    display: none;
+  }
+/* Mobile menu */
+@media (max-width: 800px) {
+    nav ul {
+      display: none;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    #mob_button {
+      background-color: transparent;
+      display: block;
+      border: none;
+      color: white;
+      padding: 1rem;
+    }
+    nav.responsive ul {
+      background-color: white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 85px;
+    }
+  
+    nav.responsive ul li {
+      display: block;
+    }
+    nav.responsive ul li a {
+      color: #032330;
+      display: block;
+      width: 100%;
+    }
+  }
