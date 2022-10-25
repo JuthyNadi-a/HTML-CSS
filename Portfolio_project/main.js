@@ -41,7 +41,7 @@ const changeImageFront = () => {
 const changeImageBack = () => {
   // If current idx exceeds images array
   // length, reset it to 0 again
-  if(currentImgIdx >= images.length){
+  if(currentImgIdx == images.length){
       currentImgIdx = 0;
   }
   img.src = images[currentImgIdx];

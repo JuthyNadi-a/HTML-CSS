@@ -25,12 +25,13 @@ header {
     background-color: rgb(10, 29, 69);
     color: aliceblue;
     top: 0;
+    z-index: 1; 
 }
 ul {
     display: flex;
     list-style-type: none;
     flex: 1;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
 }
 
 a {
@@ -84,6 +85,7 @@ a:hover {
     position: relative;
     height: 400px;
     width: 400px;
+    z-index: -500;
 }
 .box {
     height: 400px;
@@ -146,7 +148,7 @@ span {
     justify-items: center;
     align-items: center;
 } 
-.skillImages {
+ .skillImages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 3rem;
