@@ -120,15 +120,15 @@ hr {
     height: 40px;
     border-width: 3px;
 }
+.projectImg img{
+    height: 700px;
+    width: 50vw;
+    margin: 2vw;
+}
 .projectImg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.projectImg img{
-    height: 700px;
-    width: 47vw;
-    margin: 2vw;
 }
 span {
     height: 50px;
