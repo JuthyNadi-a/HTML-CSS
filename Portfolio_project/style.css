@@ -21,7 +21,7 @@ header {
     position: sticky;
     height: 8vh;
     align-items: center;
-    padding: 1rem;
+    padding: 1vw;
     background-color: rgb(10, 29, 69);
     color: aliceblue;
     top: 0;
@@ -37,8 +37,8 @@ ul {
 a {
     text-decoration: none;
     color: aliceblue;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1vw;
+    margin: 1vw;
 }
 a:hover {
     background-color: rgb(217, 226, 233);
@@ -63,23 +63,24 @@ a:hover {
     display: flex;
 }
 .banner {
-    margin: 100px 180px;
-    width: 50%;
+    margin: 6vw 8vw;
+    width: 50vw;
 }
 .banner h1{
     font-size: 2.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
     color: rgb(29, 33, 120);
     text-shadow: 1px 2px gray;
 }
 .banner p {
     font-size: 2.5rem;
+    text-align: justify;
 }
 .bannerImg img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 100px;
+    margin: 3vw 4vw;
     position: relative;
     height: 400px;
     width: 15vw;
@@ -88,7 +89,7 @@ a:hover {
 .box {
     height: 400px;
     width: 15vw;
-    margin-top: 120px;
+    margin-top: 4.5vw;
     position: relative;
     right: 16vw;
     border: 2px solid black;
@@ -97,15 +98,15 @@ a:hover {
     min-height: 40vh;
 }
 h2 {
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
     color: rgb(16, 73, 163);
     font-size: 3.5rem;
     text-shadow: 0px 2px 2px rgb(168, 163, 163);
 }
 #projects,#about, #skills {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2vh;
 }
 #projects p, #skills p{
     text-align: center;
@@ -115,7 +116,7 @@ h2 {
 
 hr {
     width: 90vw;
-    margin-left: 140px;
+    margin-left: 5.5vw;
     height: 40px;
     border-width: 3px;
 }
@@ -149,11 +150,11 @@ span {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 1vw;
-    grid-gap: 22px;
+    grid-gap: 1.4vw;
 }
 .skillImages img {
     width: 16vw;
-    height: 420px;
+    height: 14vw;
 } 
 .skillImages img:hover {
     transform: scale(1.2);
@@ -165,7 +166,7 @@ span {
 .about-content img {
     height: 450px;
     width: 32vw;
-    margin-right: 2rem;
+    margin-right: 2vw;
     margin-left: 35vw;
 }
 .about-content img:hover, .about-content p:hover {
@@ -185,7 +186,7 @@ span {
     overflow: scroll;
 }
 h3 {
-    margin: 2rem;
+    margin: 2vw;
     font-size: 2.5rem;
 }
 .cards {
@@ -213,14 +214,14 @@ h3 {
   }
   
   .container {
-    padding: 2px 16px;
+    padding: 1vw 2vw;
   }
 
 /* Photo gallery section */
 
 #photoGallery {
     min-height: 100vh;
-    margin-bottom: 5rem;
+    margin-bottom: 2vh;
 }
 #photoGallery img{
     object-fit: cover;
@@ -242,10 +243,10 @@ grid-template-areas:
 "image4 image5 image5 image6 image6"
 "image7 image7 image8 image8 image9"
 ;
-grid-gap: 1rem;
+grid-gap: .5vw;
 grid-auto-rows: 1fr;
-margin: 2rem;
-padding: 1rem;
+margin: 2vw;
+padding: 1vw;
 overflow-x: none;
 }
 .image1 {
