@@ -79,19 +79,18 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     margin: 70px 100px;
     position: relative;
     height: 400px;
-    width: 400px;
-    z-index: -500;
+    width: 15vw;
+    z-index: -1;
 }
 .box {
     height: 400px;
-    width: 400px;
+    width: 15vw;
     margin-top: 120px;
     position: relative;
-    right: 450px;
+    right: 16vw;
     border: 2px solid black;
 }
 .details {
@@ -115,21 +114,20 @@ h2 {
 }
 
 hr {
-    width: 90%;
+    width: 90vw;
     margin-left: 140px;
     height: 40px;
     border-width: 3px;
 }
 .projectImg {
-    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 420px;
 }
 .projectImg img{
-    height: 800px;
-    margin: 25px;
+    height: 700px;
+    width: 47vw;
+    margin: 2vw;
 }
 span {
     height: 50px;
@@ -150,11 +148,11 @@ span {
  .skillImages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-left: 3rem;
+    margin-left: 1vw;
     grid-gap: 22px;
 }
 .skillImages img {
-    width: 450px;
+    width: 16vw;
     height: 420px;
 } 
 .skillImages img:hover {
@@ -166,24 +164,25 @@ span {
 
 .about-content img {
     height: 450px;
-    width: 750px;
+    width: 32vw;
     margin-right: 2rem;
-    margin-left: 890px;
+    margin-left: 35vw;
 }
 .about-content img:hover, .about-content p:hover {
     box-shadow: -8px 8px rgb(152, 151, 151);
 }
 .about-content p {
-    width: 850px;
+    width: 35vw;
     height: 450px;
     display: grid;
     justify-items: center;
     align-items: center;
     font-size: 2rem;
-    margin-left: 39rem;
-    margin-right: 4rem;
-    padding: 2rem;
+    margin-left: 16vw;
+    margin-right: 2vw;
+    padding: 2vw;
     background-color: white;
+    overflow: scroll;
 }
 h3 {
     margin: 2rem;
@@ -195,11 +194,11 @@ h3 {
     align-items: center;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 500px;
+    width: 22vw;
     border-radius: 5px;
-    margin: 3rem;
+    margin: 2vw;
   }
   
   .card:hover {
@@ -208,15 +207,17 @@ h3 {
   
   .card img {
     height: 600px;
-    width: 500px;
-    padding: 2rem;
+    width: 22vw;
+    padding: 1vw;
     border-radius: 5px 5px 0 0;
   }
   
   .container {
     padding: 2px 16px;
   }
+
 /* Photo gallery section */
+
 #photoGallery {
     min-height: 100vh;
     margin-bottom: 5rem;
@@ -312,7 +313,7 @@ overflow-x: none;
     align-items: center;
 }
 #contact h3 {
-     margin: 10px 20px;
+    margin: 10px 20px;
     padding: 20px; 
     font-size: 3rem;
     display: flex;
@@ -413,7 +414,7 @@ justify-content: center;
 align-items: center;
 }
 .icons img {
-    margin-left: 2.2rem;
+    margin-left: 1.5vw;
     height: 65px;
     border-radius: 8px;
     background-color: rgb(8, 31, 78);
@@ -422,7 +423,7 @@ align-items: center;
     display: none;
   }
 /* Mobile menu */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     nav ul {
       display: none;
     }
